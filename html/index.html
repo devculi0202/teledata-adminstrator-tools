@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Teledata administrator tools</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <!-- Nav tabs -->
+        <div class=" navigation">
+            <nav class="navbar navbar-light  navbar-custom">
+                <a class="navbar-brand logo" href="#">
+                    <img src="../images/logo-crif.png" alt="teledata">
+                </a>
+                <div class="nav-menu">
+                    <ul class="menu">
+                        <li>
+                            <span>
+                                <a class="active">
+                                    <p class="menu-name">TELEDATA</p>
+                                </a>
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <a>
+                                    <p class="menu-name">ERP</p>
+                                </a>
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <a>
+                                    <p class="menu-name">DOCUMENTS</p>
+                                </a>
+                            </span>
+
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="content-section">
+        <main class="main-content">
+            <div class="transfer-content">
+                <table id="table" class="table table-custom">
+                    <tbody>
+                        <tr scope="row">
+                            <td colspan="1"><b>Base url</b></td>
+                            <td><input></td>
+                            <td>
+                                <button><b>Choose path</b></button>
+                            </td>
+                        </tr>
+                        <tr scope="row" class="row-custom">
+                                <td><b>Action</b></td>
+                                <td scope="col" colspan="2"><b>File source</b> </td>
+                                <td scope="col" colspan="4"><b>File target</b></td>
+                                <td scope="col"><b>Result transfer</b></td>
+                        </tr>
+                        <tr class="row-custom input-custom">
+                            <td>
+                                <button id="btnAddCol" type="button" onclick="addColumn()">
+                                    <label><b>Add</b></label>
+                                </button>
+                                <button class="remove-col" type="button">
+                                    <label><b>Remove</b></label>
+                                </button>
+                            </td>
+                            <td colspan="1">
+                                <input>
+                            </td>
+                            <td>
+                                <button type="button">Load files</button>
+                                <button type="button">Transfer</button>
+                            </td>
+                            <td colspan="4">
+                                <select class="file-need-transf">
+                                    <option value="1">Item 1</option>
+                                    <option value="2">Item 2</option>
+                                </select>
+                            </td>
+                            <td>OK</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div>
+                    <p>Progressing</p>
+                    <div class="progress">
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>
